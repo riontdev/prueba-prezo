@@ -14,8 +14,8 @@ class RecipeProduct extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'total',
+        'product_id',
+        'recipe_id',
     ];
 
 }
