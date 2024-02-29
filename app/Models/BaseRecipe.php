@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BaseRecipe extends Model
 {
-    protected $table = 'products';
+    protected $table = 'base_recipes';
     /**
      * The attributes that are mass assignable.
      *
