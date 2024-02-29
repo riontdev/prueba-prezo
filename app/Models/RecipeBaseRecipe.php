@@ -14,8 +14,8 @@ class RecipeBaseRecipe extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'total',
+        'recipe_id',
+        'recipe_base_id',
     ];
 
 }
