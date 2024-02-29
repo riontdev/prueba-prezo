@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Recipe;
 use Illuminate\Http\Request;
 
 class RecipeController extends Controller
@@ -14,15 +15,15 @@ class RecipeController extends Controller
         
     }
 
-    public function show(Request $request) {
+    public function show(Recipe $recipe) {
         
     }
 
-    public function update(Request $request) {
+    public function update(Recipe $recipe, Request $request) {
         
     }
 
-    public function destroy(Request $request) {
+    public function destroy(Recipe $recipe) {
         
     }
 }
