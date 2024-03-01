@@ -18,4 +18,9 @@ class Recipe extends Model
         'total'
     ];
 
+    public function recipeProducts()
+    {
+        return $this->hasMany(RecipeProduct::class);
+    }
+
 }

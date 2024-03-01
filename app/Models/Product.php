@@ -14,9 +14,8 @@ class Product extends Model
      */
     protected $fillable = [
         'name',
-        'gross_quantity',
-        'net_quantity',
-        'unit_price'
+        'unit_price',
+        'unit'
     ];
 
 }

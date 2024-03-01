@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class RecipeProduct extends Model
 {
     protected $table = 'recipe_products';
+    protected $hidden = ['product_id', 'recipe_id'];
     /**
      * The attributes that are mass assignable.
      *
@@ -16,6 +17,18 @@ class RecipeProduct extends Model
     protected $fillable = [
         'product_id',
         'recipe_id',
+        'gross_quantity',
+        'net_quantity',
     ];
+
+    public function recipe()
+    {
+        return $this->belongsTo(Recipe::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 
 }

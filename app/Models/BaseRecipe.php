@@ -18,4 +18,13 @@ class BaseRecipe extends Model
         'total',
     ];
 
+    public function recipeBaseProducts()
+    {
+        return $this->hasMany(RecipeBaseProduct::class, 'recipe_base_id');
+    }
+    public function recipeBaseRecipes()
+    {
+        return $this->hasMany(RecipeBaseRecipe::class, 'recipe_base_id');
+    }
+
 }

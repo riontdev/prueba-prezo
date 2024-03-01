@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class RecipeBaseRecipe extends Model
 {
     protected $table = 'recipe_base_recipes';
+    protected $hidden = ['recipe_id', 'recipe_base_id'];
     /**
      * The attributes that are mass assignable.
      *
@@ -18,4 +19,8 @@ class RecipeBaseRecipe extends Model
         'recipe_base_id',
     ];
 
+    public function recipe()
+    {
+        return $this->belongsTo(Recipe::class);
+    }
 }
