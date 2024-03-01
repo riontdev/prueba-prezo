@@ -13,7 +13,6 @@ Para interactuar con las API de este proyecto, por favor consulta nuestra docume
 ## Estructura del Código
 
 El proyecto está organizado de la siguiente manera:
-proyecto/
 ├── app/
 │   ├── Http/
 │   │   └── Controllers/
