@@ -36,8 +36,10 @@ class CreateBaseRecipeRequest extends FormRequest
     public function messages()
     {
         return [
-            '*.required' => 'El :attribute del producto es requerido.',
-            '*.string' => 'El :attribute  debe ser una cadena de texto.',
+            '*.required' => 'El :attribute es requerido.',
+            '*.exists' => 'El :attribute no existe',
+            '*.integer' => 'EL :attribute debe ser entero',
+            '*.string' => 'El :attribute debe ser una cadena de texto.',
             '*.max' => 'El :attribute no puede exceder los 100 caracteres.',
             '*.min' => 'El :attribute debe ser mas de 0.',
         ];
