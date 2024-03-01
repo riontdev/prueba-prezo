@@ -24,4 +24,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('product', ProductController::class);
 Route::apiResource('recipe', RecipeController::class);
 Route::apiResource('baseRecipe', BaseRecipeController::class);
-Route::get('recipe/moreUsed', [RecipeController::class, 'getMore']);
+Route::get('recipe-rank', [RecipeController::class, 'getMore']);
