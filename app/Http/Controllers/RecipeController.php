@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateRecipeRequest;
 use App\Models\Product;
 use App\Models\Recipe;
 use App\Models\RecipeProduct;
@@ -31,7 +32,7 @@ class RecipeController extends Controller
         ]);
     }
 
-    public function store(Request $request) 
+    public function store(CreateRecipeRequest $request) 
     {
         $recipe = $this->recipeService->create([
             "name" => $request->name,

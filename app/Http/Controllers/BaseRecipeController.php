@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateBaseRecipeRequest;
 use App\Models\BaseRecipe;
 use App\Models\Product;
 use App\Models\Recipe;
@@ -33,17 +34,7 @@ class BaseRecipeController extends Controller
         ]);
     }
 
-    public function indexOrderBy(Request $request) 
-    {
-        $base_recipes = $this->baseRecipeService
-        ->getAll(['recipeBaseProducts.product', 'recipeBaseRecipes.recipe.recipeProducts.product']);
-
-        return response()->json([
-            "data" => $base_recipes
-        ]);
-    }
-
-    public function store(Request $request) 
+    public function store(CreateBaseRecipeRequest $request) 
     {
         $base_recipe = $this->baseRecipeService->create([
             "name" => $request->name,
@@ -58,13 +49,6 @@ class BaseRecipeController extends Controller
     }
 
     public function show(BaseRecipe $base_recipe) 
-    {
-        return response()->json([
-            "data" => $base_recipe
-        ]);
-    }
-
-    public function update(BaseRecipe $base_recipe, Request $request) 
     {
         return response()->json([
             "data" => $base_recipe
