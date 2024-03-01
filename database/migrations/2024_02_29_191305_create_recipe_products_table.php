@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedInteger('product_id');
             $table->unsignedInteger('recipe_id');
+            $table->integer('gross_quantity');
+            $table->integer('net_quantity');
             $table->timestamps();
         });
     }

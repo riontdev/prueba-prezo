@@ -15,9 +15,8 @@ return new class extends Migration
             $table->id();
         
             $table->string('name', 100);
-            $table->decimal('gross_quantity', 8, 2);
-            $table->decimal('net_quantity', 8, 2);
             $table->decimal('unit_price', 8, 2);
+            $table->string('unit');
             $table->timestamps();
         });
     }

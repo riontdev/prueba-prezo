@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('base_recipes', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->decimal('total', 8, 2);
+            $table->decimal('total', 8, 2)->default(0);
             $table->timestamps();
         });
     }
