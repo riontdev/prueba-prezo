@@ -14,25 +14,20 @@ Para interactuar con las API de este proyecto, por favor consulta nuestra docume
 
 El proyecto está organizado de la siguiente manera:
 proyecto/
-│
 ├── app/
-| |── Http/
-|     |── Controllers
-│     ├── BaseRecipeController.php
-│     └── ...
-│
-| |── Models/
-│   ├── User.php
-│   └── ...
-|
-| |── Service/
-│   ├── ProductService.php
-│   └── ...
-|
-| |── Repository/
-│   ├── ProductRepository.php
-│   └── ...
-│
+│   ├── Http/
+│   │   └── Controllers/
+│   │       ├── BaseRecipeController.php
+│   │       └── ...
+│   ├── Models/
+│   │   ├── User.php
+│   │   └── ...
+│   ├── Service/
+│   │   ├── ProductService.php
+│   │   └── ...
+│   └── Repository/
+│       ├── ProductRepository.php
+│       └── ...
 └── ...
 
 ## Dependencias
