@@ -33,7 +33,7 @@ class CreateProductRequest extends FormRequest
     public function messages()
     {
         return [
-            '*.required' => 'El :attribute del producto es requerido.',
+            '*.required' => 'El :attribute es requerido.',
             '*.string' => 'El :attribute  debe ser una cadena de texto.',
             '*.numeric' => 'El :attribute  debe ser numerico',
             '*.max' => 'El :attribute no puede exceder los 100 caracteres.',
